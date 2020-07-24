@@ -1,0 +1,367 @@
+
+@media (max-width: 1024px){
+    .form-message{
+        right: 195px;
+    }
+
+    .about_us_item:nth-child(even),
+    .about_us_item:nth-child(odd){
+        border: none;
+    }
+
+    .about_us_item{
+        width: 80%;
+    }
+
+    .form [method="post"]{
+        flex-direction: column;
+    }
+
+    .message textarea{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .nav a{
+        color: #ffff;
+        padding: 13px;
+    }
+
+    .nav a:hover{
+        display: inline-block;
+        background-color: #000;
+    }
+
+   .nav li:hover>ul{
+        position: relative;
+        left: 41.5%;
+    }
+
+    .nav .menu_subitem:hover{
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .nav ul,
+    .nav li>ul{
+        display: block;
+    }
+
+    #menu__toggle {
+        display: none;
+    }
+
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: fixed;
+        top: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 7;
+        background-color: #fff;
+    }
+    
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+    }
+
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+        z-index: 7;
+    }
+
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+        z-index: 7;
+    }
+
+    .menuham {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        margin: 0;
+        padding: 80px 0;
+        text-align: center;
+        background-color: #000000;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 5;
+        border-radius: 10px;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menuham {
+        visibility: visible;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.70;
+    }
+
+    .portfolio_list_firstrow, 
+    .portfolio_list_secondrow{
+        display: inline-block;
+        width: 49%;
+    }
+
+    .about_us_item_text{
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .form-message{
+        right: 80px;
+        font-size: 19px;
+        top: 366px;
+    }
+    
+    .header-promo-content h3{
+        font-size: 50px;
+        margin-left: -55px;
+    }
+
+    .team-members-info{
+        padding-bottom: 50px;
+    }
+
+    .wordpress{
+        margin: 10px;
+    }
+
+    .form .container>h2{
+        font-size: 28px;
+    }
+
+    .name input[type="text"],
+    .email input[type="email"],
+    .subject input[type="text"]{
+        width: 400px;
+        height: 35px;
+    }
+    
+    .email input[type="email"],
+    .subject input[type="text"]:last-child{
+        margin-top: 15px;
+    }
+    
+    .message textarea{
+        width: 400px;
+        height: 150.5px;
+        margin-top: 13.5px;
+    }
+}
+
+@media (max-width: 425px){
+    .wrapper{
+        padding: 0;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .form-message{
+        right: 90px;
+        width: 200px;
+        padding: 25px;
+        top: 370px;
+    }
+
+    .header-top-logo{
+        margin-top: 20px;
+    }
+
+    .header-promo-content h3{
+        font-size: 24px;
+        margin-left: auto;
+    }
+
+    .b-popup .b-popup-content{
+        margin-top: 170px;
+        margin-left: 53px;
+        width:300px;
+        height: 142px;
+        font-size: 24px;
+        line-height: 20px;
+    }
+    
+    .service_list{
+        margin-top: 30px;
+        margin-left: -10px;
+        display: block;
+    }
+
+    .service_item:not(:last-child){
+        margin-bottom: 15px;  
+    }
+    
+    .portfolio_list_firstrow,
+    .portfolio_list_secondrow{
+        display: block;
+        width: 100%;
+    }
+
+    .service .container > h2, 
+    .portfolio .container > h2,
+    .info .container >h2, 
+    .team .container >h2{
+        font-size: 25px;
+    }
+
+    .info .wrapper{
+        align-items: center;
+    }
+
+    .about_us_item{
+        flex-direction: column;
+        margin-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .about_us_item_text{
+        text-align: center;
+    }
+
+    .about_us_item .image1,
+    .about_us_item .image3{
+        order: -1;
+    }
+
+    .about_us_item:nth-child(even),
+    .about_us_item:nth-child(1) .about_us_image, 
+    .about_us_item:nth-child(3) .about_us_image{
+        margin-left: 0;
+    }
+
+    .about_us_item:nth-child(even) .about_us_image{
+        margin-left: 0;
+    }
+
+    .about_us_item:nth-child(1) .about_us_image, 
+    .about_us_item:nth-child(3) .about_us_image{
+        margin-right: unset;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .about_us_item_image_final{
+        width: 130px;
+        height: 130px;
+        min-width: 130px;
+    }
+
+    .about_us_item_image_final{
+        margin-top: 10px;
+    }
+
+    .about_us_item_image_final a{
+        left: 10px;
+        top: 18px;
+    }
+
+    .team-members .wrapper{
+        flex-direction: column;
+    }
+
+    .team-members .pic{
+        width:100px;
+        height: 100px;
+        margin:auto;
+        margin-top: 40px;
+    }
+    
+    .team-members-person1 .socials, 
+    .team-members-person2 .socials, 
+    .team-members-person3 .socials{
+        justify-content: center;
+    }
+
+    .team-members-info{
+        font-size: 14px;
+    }
+    
+    .logos-icons{
+        flex-wrap: wrap;
+    }
+    
+    .name input[type="text"],
+    .email input[type="email"],
+    .subject input[type="text"]{
+        width: 207px;
+        height: 30px;
+    }
+    
+    .name input[type="text"]{
+        margin-top: 15px;
+    }
+
+    .message textarea{
+        width: 207px;
+    }
+    
+    .button_message{
+        height: 58px;
+        width: 200px;
+    }
+    
+    .copy{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px){
+    .form-message{
+        right: 60px;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+}
+@media (max-width: 320px){
+    .header-promo-content h3{
+        font-size: 20px;  
+    }
+
+    .form-message{
+        right: 18px;
+    }
+
+    .b-popup .b-popup-content{
+        margin-left: 9px;
+        width: 281px;
+        height: 192px;
+    }
+
+    .copy{
+        font-size: 11px;
+        margin-left: -16px;
+    }
+}
